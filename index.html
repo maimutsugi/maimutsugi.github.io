@@ -15,13 +15,14 @@
             align-items: center;
         }
         header {
-            background-color: #4CAF50;
+            background-color: #4CAF50; /* 背景色 */
             color: white;
             text-align: center;
-            width: 100%;
-            padding: 1em;
-            box-sizing: border-box;
+            padding: 20px;
             position: relative;
+            width: 100%;
+            box-sizing: border-box;
+            overflow: hidden; /* 背景画像がはみ出さないようにする */
         }
         /* ヘッダー画像のスタイル */
         header img {
@@ -136,6 +137,35 @@
         
         .table-of-contents li {
             margin-bottom: 10px; /* 各リスト間の余白を追加 */
+        }
+        /* ヘッダー内のコンテンツ */
+        .header-content {
+            position: relative;
+            z-index: 2; /* 画像の上に表示 */
+        }
+        
+        /* ヘッダー画像 */
+        .header-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+            opacity: 0.3; /* 画像を少し透明にする */
+            z-index: 1; /* テキストの下に表示 */
+        }
+        
+        /* ヘッダーのタイトル */
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            z-index: 2;
+        }
+        
+        header p {
+            margin-top: 10px;
+            font-size: 1.2em;
+            z-index: 2;
         }
     </style>
 </head>
