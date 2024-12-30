@@ -53,6 +53,20 @@
         a:hover {
             text-decoration: underline;
         }
+
+        /* 新しいスタイル */
+        #container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 20px;
+        }
+        #icon {
+            margin-right: 20px;
+        }
+        #context {
+            flex-grow: 1;
+        }
     </style>
 </head>
 <body>
@@ -62,19 +76,18 @@
 </header>
 
 <div id="container">
-    <div id="name">
-        <hr class="default-hr">
-        <div class="FullName">
-            <h1>むつぎ</h1>
-        </div>
-        <hr class="default-hr">
-    </div>
- 
     <div id="icon">
-        <img src="https://github.com/maimutsugi/maimutsugi.github.io/raw/main/IMG_7330.jpg" alt="No Image" width="300" height="450">
+        <img src="https://github.com/maimutsugi/maimutsugi.github.io/raw/main/IMG_7330.jpg" alt="No Image" width="300" height="400">
     </div>
-    
+
     <div id="context">
+        <div id="name">
+            <hr class="default-hr">
+            <div class="FullName">
+                <h1> むつぎ</h1>
+            </div>
+            <hr class="default-hr">
+        </div>
         <p>
             はじめまして！ mosssssyと申します。<br>
             大阪府に住んでいます。<br>
@@ -82,7 +95,7 @@
             趣味は読書とカフェ巡りです。<br>
             よろしくお願いします！<br><br>
         </p>
-                
+
         <div class="link">
             <ul class="follow-me">
                 <li><a href="**InstagramのURL**">Instagram</a></li>
@@ -91,7 +104,6 @@
             </ul>
         </div>
     </div>
-
 </div>
 
 <footer>
