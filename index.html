@@ -27,7 +27,7 @@
             padding: 2em;
             background-color: white;
             width: 90%;
-            max-width: 800px;
+            max-width: 1200px; /* 横幅を広げました */
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         h1, h2 {
@@ -66,17 +66,29 @@
             height: auto;
         }
         #context {
-            max-width: 600px;
-            text-align: left; /* 文字の左寄せ */
+            max-width: 800px;
+            text-align: left;
         }
         #name {
             margin-bottom: 20px;
-            text-align: left; /* タイトル部分も左寄せ */
+            text-align: left;
         }
         hr {
             border: none;
             border-top: 1px solid #ccc;
             margin: 10px 0;
+        }
+
+        /* 章のデザイン */
+        .section {
+            margin-top: 30px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #e6f7ff; /* 薄い水色 */
+        }
+        .section h2 {
+            margin-top: 0;
+            color: #007acc; /* 章タイトルの文字色 */
         }
     </style>
 </head>
@@ -97,7 +109,6 @@
                 <hr>
                 <div class="FullName">
                     <h1>むつぎ</h1>
-                    <h4>mutsugi</h4>
                 </div>
                 <hr>
             </div>
@@ -108,6 +119,33 @@
                 どうぞよろしくお願いします！<br><br>
             </p>
         </div>
+    </div>
+
+    <!-- Introduction セクション -->
+    <div class="section">
+        <h2>Introduction</h2>
+        <p>
+            私はノベルゲームや物語創作が好きで、これまでに多くの作品を楽しんできました。<br>
+            ここでは、自己紹介や好きなジャンル、これまでの活動についてまとめています。
+        </p>
+    </div>
+
+    <!-- ノベルゲ セクション -->
+    <div class="section">
+        <h2>ノベルゲ</h2>
+        <p>
+            ノベルゲームは私にとって特別な存在です。感情を動かし、深い物語体験を与えてくれる作品に魅了されています。<br>
+            最近プレイした作品や印象に残ったタイトルをこちらで紹介していきます。
+        </p>
+    </div>
+
+    <!-- 小説 セクション -->
+    <div class="section">
+        <h2>小説</h2>
+        <p>
+            趣味で書いている小説の紹介や、アイデアを記録しています。<br>
+            主にSFやファンタジーを題材にしており、世界観やキャラクター設定を深く掘り下げるのが好きです。
+        </p>
     </div>
 </main>
 
