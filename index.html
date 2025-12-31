@@ -181,6 +181,43 @@
             border-radius: 5px;
             box-shadow: 0 0 5px rgba(0,0,0,0.15);
         }
+        
+        /* 右端固定・目次ナビ */
+        .toc-fixed {
+            position: fixed;
+            top: 120px;              /* 上からの距離（headerがないので少し下げる） */
+            right: 20px;             /* 画面右端から */
+            width: 200px;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+        
+        .toc-fixed h3 {
+            margin-top: 0;
+            font-size: 18px;
+        }
+        
+        .toc-fixed ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .toc-fixed li {
+            margin-bottom: 10px;
+        }
+        
+        .toc-fixed a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        
+        .toc-fixed a:hover {
+            text-decoration: underline;
+        }      
     </style>
 </head>
 
@@ -433,7 +470,17 @@
             </p>
         </div>
     </div>
-        
+
+    <!-- 右端固定の目次 -->
+    <nav class="toc-fixed">
+        <h3>目次</h3>
+        <ul>
+            <li><a href="#novel-game">ノベルゲーム</a></li>
+            <li><a href="#pilgrimage">聖地巡礼</a></li>
+            <li><a href="#novel">小説</a></li>
+        </ul>
+    </nav>
+
     <footer>
         <!-- その他のフッター内容 -->
         <p>最終更新日: 2025年12月31日</p>
