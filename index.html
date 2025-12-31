@@ -217,7 +217,13 @@
         
         .toc-fixed a:hover {
             text-decoration: underline;
-        }      
+        }
+        /* スマホでは右端固定の目次を非表示 */
+        @media (max-width: 768px) {
+            .toc-fixed {
+                display: none;
+            }
+        }
     </style>
 </head>
 
@@ -480,6 +486,7 @@
             <li><a href="#novel">小説</a></li>
         </ul>
     </nav>
+    
 
     <footer>
         <!-- その他のフッター内容 -->
