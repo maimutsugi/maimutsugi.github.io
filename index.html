@@ -167,6 +167,20 @@
             font-size: 1.2em;
             z-index: 2;
         }
+        /* 聖地巡礼：写真横並び */
+        .photo-row {
+            display: flex;
+            gap: 15px;              /* 写真同士の間隔 */
+            flex-wrap: wrap;        /* 画面が狭いときは折り返す */
+            margin: 10px 0 20px 0;
+        }
+        
+        .photo-row img {
+            width: 180px;           /* 好みで調整 */
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.15);
+        }
     </style>
 </head>
 
@@ -315,18 +329,13 @@
 
           <h3 class="underline">巡礼メモ</h3>
           <h4 class="underline"> 色づく世界の明日から </h4>
+          <div class="photo-row">
+              <img src="画像URL1" alt="色づく世界の明日から 聖地1">
+              <img src="画像URL2" alt="色づく世界の明日から 聖地2">
+              <img src="画像URL3" alt="色づく世界の明日から 聖地3">
+          </div>
         </div>
     
-        <!-- 例：カード風に増やしたいならここに追記していく -->
-        <!--
-        <div class="highlight">
-          <h3 class="underline">作品名：XXXX</h3>
-          <p>
-            場所：XXXX（都道府県）<br>
-            メモ：XXXX<br>
-          </p>
-        </div>
-        -->
       </div>
     </div>
 
